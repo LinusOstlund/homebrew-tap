@@ -1,16 +1,15 @@
 class Lml < Formula
   desc "macOS menu bar app for wrapping selected text in XML tags"
   homepage "https://github.com/LinusOstlund/linus-markup-language"
-  url "https://github.com/LinusOstlund/linus-markup-language/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "5827d451058b4e9b3f970552b5665b41ebaeeee9ca23adb71baf343e2ee34ec3"
+  url "https://github.com/LinusOstlund/linus-markup-language/releases/download/v0.1.0/LML-v0.1.0-arm64.tar.gz"
+  sha256 "a50146941f235dcc1a730250ba1dbf012d4705ce5b80f4732226f716985c2760"
+  version "0.1.0"
   license "MIT"
-  head "https://github.com/LinusOstlund/linus-markup-language.git", branch: "main"
 
   depends_on :macos
 
   def install
-    system "swift", "build", "-c", "release", "--disable-sandbox"
-    bin.install ".build/release/LML" => "lml"
+    bin.install "LML" => "lml"
   end
 
   def caveats
