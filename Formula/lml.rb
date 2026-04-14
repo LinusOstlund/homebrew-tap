@@ -2,7 +2,7 @@ class Lml < Formula
   desc "macOS menu bar app for wrapping selected text in XML tags"
   homepage "https://github.com/LinusOstlund/linus-markup-language"
   url "https://github.com/LinusOstlund/linus-markup-language/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "REPLACE_WITH_SHA256_AFTER_RELEASE"
+  sha256 "5827d451058b4e9b3f970552b5665b41ebaeeee9ca23adb71baf343e2ee34ec3"
   license "MIT"
   head "https://github.com/LinusOstlund/linus-markup-language.git", branch: "main"
 
