@@ -1,6 +1,6 @@
 cask "lml" do
-  version "0.2.0"
-  sha256 "PLACEHOLDER_UNTIL_RELEASE"
+  version "0.1.1"
+  sha256 "b0643cbdab7ef8e557b90cb5976dd135ba59c3ee3378befc9dd12a8a1a09d188"
 
   url "https://github.com/LinusOstlund/linus-markup-language/releases/download/v#{version}/LML-v#{version}-arm64.zip"
   name "LML"
