@@ -12,6 +12,9 @@ cask "lml" do
   app "LML.app"
 
   caveats <<~EOS
+    If macOS shows "LML Not Opened" on first launch, run:
+      xattr -cr /Applications/LML.app && open /Applications/LML.app
+
     LML needs Accessibility access to read and replace selected text.
     Grant it at: System Settings → Privacy & Security → Accessibility
   EOS
